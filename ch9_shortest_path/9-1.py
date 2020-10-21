@@ -44,13 +44,14 @@ def dijkstra(start):
     # 시작 노드에 대해 초기화
     distance[start] = 0
     visited[start] = True
+
     for j in graph[start]:
         # j[0] = start 노드에서 이어진 노드 번호
         # j[1] = start 노드에서 이어진 노드까지의 거리
         distance[j[0]] = j[1] # 해당 노드번호까지의 최단거리를 j[1]의 값으로 설정
 
     # 시작 노드를 제외한 전체 n-1개의 노드에 대해 반복
-    for i in range(n-1):
+    for _ in range(n-1):
         now = get_smallest_node()
         visited[now] = True
         # 현재 노드와 연결된 다른 노드를 확인
