@@ -34,6 +34,7 @@ cycle = False # 사이클 발생 여부를 판별하는 변수
 for i in range(e):
     a, b = map(int, input().split())
     # 사이클이 발생한 경우 종료
+    # 트리 자료구조에서 간선으로 이어진 두 노드가 같은 루트 노드를 가지고 있다는 것은 사이클이 발생함을 의미한다.
     if find_parent(parent, a) == find_parent(parent, b):
         cycle = True
         break
