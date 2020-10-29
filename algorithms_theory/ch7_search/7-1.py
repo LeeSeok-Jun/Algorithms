@@ -1,3 +1,5 @@
+# 2020/10/13
+
 # 순차 탐색 소스코드 구현
 def sequential_search(n, target, array):
     # 각 원소를 하나씩 확인
